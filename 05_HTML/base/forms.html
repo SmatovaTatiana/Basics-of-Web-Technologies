@@ -119,7 +119,7 @@
                     </label>
                     <br>
                     <label>
-                        <input type="email" name="email" required pattern="^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$">* e-mail
+                        <input type="email" name="email" pattern="^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$" required>* e-mail
                     </label>
                     <br>
                     <textarea name="Feedback">Форма отправки</textarea>
@@ -186,7 +186,7 @@
             <form name="validation" action="http://fe.it-academy.by/TestForm.php" method="POST">
                 <fieldset>
                     <legend>Строка поиска</legend>
-                    <input type="text" name="search_rus" placeholder="Только русские буквы" pattern="[аА-яЯ].*">
+                    <input type="text" name="search_rus" placeholder="Только русские буквы" pattern="[аА-яЯеЁ].*">
                     <br>
                     <i>Телефонный номер в формате<br>
                         +ХХХ-ХХ-ХХХХХХХ, где Х - любое число
