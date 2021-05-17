@@ -11,13 +11,13 @@
     <form name="registration" action="http://fe.it-academy.by/TestForm.php" method="POST">
         <fieldset>
             <legend>Личные данные</legend>
-            <input type="text" name="last_name" placeholder="Фамилия" maxlength="25" pattern="^[А-Яа-яЁё]+$" autofocus required>
+            <input type="text" name="last_name" placeholder="Фамилия" maxlength="25" pattern="^[А-Яа-яЁё]{1,25}$" autofocus required>
             text: Только кириллица, без пробелов, длина поля 25, обязательное поле, автофокус на данном поле)
             <br>
-            <input type="text" name="first_name" placeholder="Имя" maxlength="20" pattern="^[А-Яа-яЁё]+$" required>
+            <input type="text" name="first_name" placeholder="Имя" maxlength="20" pattern="^[А-Яа-яЁё]{1,20}$" required>
             text: Только кириллица, без пробелов, длина поля 20, обязательное поле)
             <br>
-            <input type="text" name="second_name" placeholder="Отчество" maxlength="24" pattern="^[А-Яа-яЁё]+$" required>
+            <input type="text" name="second_name" placeholder="Отчество" maxlength="24" pattern="^[А-Яа-яЁё]{1,24}$" required>
             text: Только кириллица, без пробелов, длина поля 24, обязательное поле)
             <fieldset>
                 <legend>Паспортные данные</legend>
@@ -107,10 +107,10 @@
         </fieldset>
         <fieldset>
             <legend>Данные для входа и восстановления пароля</legend>
-            <input type="text" name="login" maxlength="20" pattern="^[a-zA-Z]{5,}+$" placeholder="Логин" required>
+            <input type="text" name="login" maxlength="20" pattern="^[a-zA-Z]{5,}$" placeholder="Логин" required>
             text: Только латиница, без пробелов, не менее 5 символов, длина поля 20, обязательное поле
             <br>
-            <input type="password" name="password" placeholder="Пароль" maxlength="20" pattern="^[a-zA-Z]{10,}+$" autocomplete="off" required>
+            <input type="password" name="password" placeholder="Пароль" maxlength="20" pattern="^[a-zA-Z]{10,}$" autocomplete="off" required>
             text: Только латиница, без пробелов, не менее 10 символов, длина поля 20, обязательное поле, отключить автозаполнение
         </fieldset>
         <fieldset>
