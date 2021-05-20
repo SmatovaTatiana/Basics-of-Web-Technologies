@@ -3,8 +3,7 @@ h4{
 }
 .right_pre{
     text-align: right;
-    white-space: pre;
-    
+    white-space: pre;    
 }
 .italic{
     text-align: right;
@@ -14,13 +13,11 @@ h4{
 .bold_underline{
     font-family: 'Bad Script', cursive;
     text-decoration-line: underline;
-    font-weight: bold
-    
+    font-weight: bold    
 }
 
 .letter{
     text-indent: 15px;
     font-family: 'Bad Script', cursive;
-    font-size: 16px;
-        
+    font-size: 16px;        
 }
