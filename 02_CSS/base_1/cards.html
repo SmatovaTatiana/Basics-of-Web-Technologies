@@ -4,27 +4,21 @@
     <meta charset="UTF-8">
     <title>02 CSS Base Task 1</title>
     <style>
-        .three {background-image: url(cards.png);
+        .card{background-image: url(cards.png);
         width:140px;
         height: 200px;
         background-repeat: no-repeat;
-        background-position: -145px -190px;
-        display: inline-block
-        }
-        .five {background-image: url(cards.png); 
-        width:140px; 
-        height: 200px; 
-        background-repeat: no-repeat; 
-        background-position: -433px -588px;
         display: inline-block;
+        }
+        .three {
+        background-position: -145px -190px;
+        }
+        .five {
+        background-position: -433px -588px;      
         margin-left: -70px;
         }
-        .nine{background-image: url(cards.png); 
-        width:140px; 
-        height: 200px; 
-        background-repeat: no-repeat; 
-        background-position: -289px -1384px;
-        display: inline-block;
+        .nine{
+        background-position: -289px -1384px;        
         margin-left: -70px;
         }
 
@@ -32,8 +26,8 @@
 </head>
 <body>
     
-    <div class="three"></div>    
-    <div class="five"></div>
-    <div class="nine"></div>
+    <div class="card three"></div>    
+    <div class="card five"></div>
+    <div class="card nine"></div>
 </body>
 </html>
