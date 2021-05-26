@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Flex - 02 CSS Add Task 2</title>
+    <style>
+        .flex_wrop{background-color: #eae8e8;
+        display: flex;
+        flex-direction: column;
+        }
+        .conteiner_row {
+        background-color: #eae8e8;
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        }   
+        .conteiner_column{
+            display: flex;
+            flex-direction: column;
+            flex-grow: 1;
+        }
+        .navigation{
+            background-color: #d8d8d8;
+            width: 15em;
+            padding: 10px;
+            flex-shrink: 0;
+        }        
+        .article{            
+            background-color: #a5a5a5;
+            margin-bottom: 2em;
+            padding: 10px 5px 10px;                       
+        }
+        .article_2{
+            margin-top: -25px;
+        }
+        .footer{
+            background-color: #cccccc;
+            padding: 10px;
+            margin-top: -25px; 
+        }
+        .img{float: right;                                    
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="flex_wrop">
+ 
+        <div class="conteiner_row">
+            <div class="navigation"><h3>Блок навигации</h3>
+                <ul>
+                    <li>Ширина 15 em</li>
+                    <li>Должен присутствовать цвет фона</li>
+                    <li>Располагается слева</li>
+                    <li>Блок навигации наполните контентом достаточным, чтобы по высоте он начинал захватывать вторую статью, как показано в данном примере</li>
+                </ul>            
+            </div>
+            <div class="conteiner_column">
+                <div class="article"><h3>Статья 1</h3>
+                    Размер блока: занимает всю доступную ширину
+                    <br>Должен присутствовать цвет фона
+                    <br>Во всех "статьях" сделайте отступ снизу от соседей равным 2em, при помощи свойства margin-bottom
+                    
+                </div>
+                
+                <div class="article article_2"><h3>Статья 2</h3>
+                    Размер блока: занимает всю доступную ширину
+                    <br>Должен присутствовать цвет фона
+                    <br>Во всех "статьях" сделайте отступ снизу от соседей равным 2em, при помощи свойства margin-bottom
+                    <br>Картинка вставлена при помощи тега, плавание организрвано по правому краю внутри данной статьи для этой картинки
+                    <br>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt tempore consequuntur hic minima dolorem quas maiores, magnam, accusamus debitis laboriosam ab laborum facere ad non laudantium. Repellat cumque illo modi.
+                    <div class="img"><img src="icon_mail.png"></div>
+                </div>
+            </div>       
+                    
+        </div>
+        
+        <div class="footer">Нижний блок, подвал. Занимает всю доступную ширину. Высота определяется помещенным внутрь контентом.</div>
+            
+        
+    </div>
+</body>
+</html>
