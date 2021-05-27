@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1"> 
 
-    <title>03 CSS Base Task 1</title>
+    <title>03 CSS Base Task</title>
     <style>
         .day {
             width: 100px;
@@ -27,7 +27,12 @@
             display: flex;
             flex-direction: column;
         }
-        .eat{
+        
+        .wednesday:hover{
+            background-color: #808080;
+            color:#d3d3d3;           
+        }
+        .eating{
             width: 100px;
             height: 30px;
             border-style: solid;
@@ -39,24 +44,33 @@
             color:#808080;
             align-items: center
         }
-        .wednesday{
-            background-color: #808080;
-            color:#d3d3d3;
+        .eating_hidden{
+            opacity:0;
+        }
+
+        .eating:hover+.eating_hidden{
+            opacity:1;
         }
         @media all and (max-width:729px){
             .menu{
             display: flex;
             flex-direction: column;
             }
-            .wednesday{
-                background-color: #d3d3d3;
-                color:#808080;
-            }
-            .eat{
-                display: none
-            }
             .day{
                 width: 150px;
+            }
+            .eating_hidden{
+                opacity: 0;
+                position: relative;
+                left: 153px;
+                top: -31px;
+            }
+            .day_hover {
+                position: relative;
+                bottom: 96px;
+            }
+            .eating:hover+.eating_hidden{
+            opacity:1;
             }
         }
     </style>
@@ -66,15 +80,17 @@
         <div class="day">Понедельник</div>
         <div class="day">Вторник</div>
         <div class="submenu">
-            <div class="day wednesday">Среда</div>
-            <div class="eat">Завтрак</div>
-            <div class="eat">Обед</div>
-            <div class="eat">Ужин</div>
-        </div>
-        <div class="day">Четверг</div>
-        <div class="day">Пятница</div>
-        <div class="day">Суббота</div>
-        <div class="day">Воскресенье</div>
+            <div class="day wednesday eating">Среда</div>
+                <div class="eating_hidden">
+                    <div class="eating">Завтрак</div>
+                    <div class="eating">Обед</div>
+                    <div class="eating">Ужин</div>
+                </div> 
+            </div> 
+        <div class="day day_hover">Четверг</div>
+        <div class="day day_hover">Пятница</div>
+        <div class="day day_hover">Суббота</div>
+        <div class="day day_hover">Воскресенье</div>
     </div>
 </body>
 </html>
