@@ -2,11 +2,15 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Document</title>
+    <title>Border var 1</title>
     <style>
-        .border{
-            
-        }
+        div{
+            padding: 3em;
+            background-color: rgb(245, 245, 245);
+            background-image: url(br.png), url(bl.png), url(tl.png), url(tr.png), url(l1.gif), url(r1.gif), url(t1.gif), url(b1.gif);
+            background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, repeat-y, repeat-y, repeat-x, repeat-x;
+            background-position: bottom right, bottom left, top left, top right, left, right, top, bottom;
+            }
     </style>
 </head>
 <body>
@@ -15,6 +19,7 @@
         Создать проект DIV_FRAME. Добавить в проект из библиотеки картинку ramka.png. Разрезать ramka.png и сверстать резиновый фон, какой приведён ниже.
         Текст можно использовать любой, но без жёстких переносов строк, чтобы мог растягиваться на произвольную ширину.
         Размеры рамки должны зависеть от количества текста в ней и от размеров окна браузера (т.е. рамка по ширине — на всю ширину окна браузера, и имеет такую высоту, чтобы вместить содержащийся в ней текст).
+    <br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae consectetur similique commodi eveniet minima magni! Explicabo, porro! Facilis temporibus recusandae, sunt magnam omnis esse facere nemo at quidem est nulla.
     </div>
 </body>
 </html>
